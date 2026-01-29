@@ -4,7 +4,7 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --partition=gpulong
 #SBATCH --gres=gpu:2                      # 2 A100 GPUs per node
-#SBATCH --nodes=4                         # 4 compute nodes
+#SBATCH --nodes=8                         # 4 compute nodes
 #SBATCH --ntasks-per-node=1               # 1 task per node (torchrun spawns GPU processes)
 #SBATCH --cpus-per-task=4                 # CPUs per task (WORKS ON YOUR HPC)
 #SBATCH --mem=32G                         # Memory per node (WORKS ON YOUR HPC)
